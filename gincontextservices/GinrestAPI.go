@@ -14,5 +14,10 @@ func RecieveURLMessage(context *gin.Context) {
 			"message": "Message recieving from URL..." + msgvalue,
 		})
 
+	} else {
+
+		context.JSON(http.StatusAccepted, gin.H{
+			"message": "Message is not 200...",
+		})
 	}
 }
