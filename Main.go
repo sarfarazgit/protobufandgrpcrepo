@@ -11,7 +11,8 @@ func main() {
 	fmt.Print("Testing..")
 
 	ginEngine := gin.Default()
-	ginEngine.GET("/datarecieve", gincontextservices.RecieveURLMessage)
+	//ginEngine.GET("/datarecieve/:message", gincontextservices.RecieveURLMessage)
+	ginEngine.POST("/post/:id", gincontextservices.SendMsg)
 	ginEngine.Run()
 
 }
