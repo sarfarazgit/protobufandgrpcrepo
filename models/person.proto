@@ -1,6 +1,5 @@
-package models
-
-syntax = "proto3"
+syntax = "proto3";
+package models;
 
 option go_package = "protobufandgrpcrepo/models"
  

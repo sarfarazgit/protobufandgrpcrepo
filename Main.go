@@ -27,6 +27,7 @@ func main() {
 -> go install google.golang.org/protobuf/cmd/protoc-gen-go@latest
 
 [Proto file compilation command]
- $ protoc --go_out=. --go_opt=paths=source_relative modles/person.proto
+
+$ protoc --go_out=. --go_opt=paths=source_relative  models/Person.proto
 
 */
