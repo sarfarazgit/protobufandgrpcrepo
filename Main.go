@@ -16,3 +16,17 @@ func main() {
 	ginEngine.Run()
 
 }
+
+/* Protobuf packages installation:
+
+1. sudo yum install -y protobuf-compiler
+
+2. [In VS CODE]
+
+-> go get google.golang.org/protobuf@latest
+-> go install google.golang.org/protobuf/cmd/protoc-gen-go@latest
+
+[Proto file compilation command]
+ $ protoc --go_out=. --go_opt=paths=source_relative modles/person.proto
+
+*/
